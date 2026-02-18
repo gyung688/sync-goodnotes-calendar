@@ -1,0 +1,72 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# =========================
+# IDE / OS
+# =========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# =========================
+# Build / temp
+# =========================
+build/
+dist/
+*.egg-info/
+*.log
+
+# =========================
+# Project: generated data
+# =========================
+out/
+tmp/
+cache/
+
+# =========================
+# Project: input PDFs (optional)
+# Uncomment if you don't want planner PDFs tracked
+# =========================
+# input/
+*.pdf
+
+# =========================
+# OCR / models / caches
+# =========================
+.paddleocr/
+.paddlex/
+easyocr/
+*.onnx
+*.pth
+*.pt
+*.ckpt
+
+# =========================
+# Google OAuth secrets
+# =========================
+secrets/
+google_credentials.json
+google_token.json
+
+# =========================
+# Ollama / local LLM artifacts
+# =========================
+*.gguf
+*.bin
+*.safetensors
+
+# =========================
+# Jupyter / misc
+# =========================
+.ipynb_checkpoints/
