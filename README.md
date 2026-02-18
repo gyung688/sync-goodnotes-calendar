@@ -21,19 +21,21 @@ This project extracts calendar cells from a fixed-layout monthly planner PDF, pe
 
 Pipeline:
 
+```mermaid
 flowchart LR
-A[GoodNotes Planner PDF] --> B[Detect Monthly Page]
-B --> C[Render Page Image]
-C --> D[Crop 42 Calendar Cells]
+    A[GoodNotes Planner PDF] --> B[Detect Monthly Page]
+    B --> C[Render Page Image]
+    C --> D[Crop 42 Calendar Cells]
 
     D --> E[OCR Handwriting]
-    E --> F[LLM Parse (Ollama)]
+    E --> F["LLM Parse (Ollama)"]
     F --> G[Structured Events JSON]
 
     G --> H[Google Calendar Sync]
 
     style A fill:#f5f5f5
     style H fill:#e8f5e9
+```
 
 Architecture:
 
